@@ -1,36 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project | Sacay</title>
-    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <title>Final Project | MC Sacay</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <header>
-        <div class="topnav">
-            <a class="active" href="#home">Home</a>
-            <a href="#about-us">About Us</a>
-            <a href="#services">Services</a>
-            <a href="#team">Team</a>
-            <a href="#contact">Contact</a>
-            <div class="search-container">
-                <!-- Navigation bar with a search box and a magnifying button inside of it. -->
-                <input type="text" placeholder="Search">
-                <button type="submit"></button>
+        <div class="nav-header">
+            <div class="logo">
+                <img src="images/logo.png" alt="Three Star Media logo">
             </div>
-          </div>
+            <div class="nav-ul">
+                <ul>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="search-container">
+                <!-- Style the submit button in CSS -->
+                    <input type="text" placeholder="Search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section id="welcome">
-            <div class="welcome-image">
-                <!-- Target in CSS for hero image -->
-                <div class="welcome-text">
+        <section id="welcome" class="hero-image">
+            <!-- Reusable section class to target in CSS for hero images -->
+            <img src="images/main-banner.jpg" alt="Three Star Media headquarters">
+            <div class="welcome-image-wrapper">
+            <!-- div class used to limit max width -->
                     <h1>Welcome to Three Star Media</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     <button type="button">Connect with us</button>
-                </div>
             </div>
         </section>
 
@@ -43,68 +53,152 @@
         </section>
 
         <section id="our-services">
-            <!-- <div class="our-services hero-img">
-                <img src="images/digital.jpg" alt="Using a laptop and smartphone">
-            </div> -->
 
             <div class="our-services">
                 <h2>Our Services</h2>
             </div>
 
-            <div class="services-grid">
-                <div class="digital-transformation">
+            <div class="services-grid-container">
+                <div id="digital-transformation" class="services-grid-item">
                     <img src="images/digital.jpg" alt="Using a laptop and smartphone">
                     <article>
                         <h3>Digital Transformation</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis imperdiet proin fermentum leo vel orci porta.</p>
-                        <a class="btn" href="#">Digital Plans</a>
+                        <button type="button">Digital Plans</button>    
                     </article>
                 </div>
 
-                <div class="marketing">
+                <div id="marketing" class="services-grid-item">
                     <img src="images/marketing.jpg" alt="Laptop showing data analytics">
                     <article>
                         <h3>Marketing</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis imperdiet proin fermentum leo vel orci porta.</p>
-                        <a class="btn" href="#">Marketing Plans</a>
+                        <button type="button">Marketing Plans</button>
                     </article>
                 </div>
 
-                <div class="video-production">
+                <div id="video-production" class="services-grid-item">
                     <img src="images/video.jpg" alt="Smartphone showing YouTube">
                     <article>
                         <h3>Video Production</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis imperdiet proin fermentum leo vel orci porta.</p>
-                        <a class="btn" href="#">Video Plans</a>
+                        <button type="button">Video Plans</button>
                     </article>
                 </div>
 
-                <div class="web-dev">
+                <div id="web-dev" class="services-grid-item">
                     <img src="images/web.jpg" alt="Smartphone showing Instagram">
                     <article>
                         <h3>Web Development</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis imperdiet proin fermentum leo vel orci porta.</p>
-                        <a class="btn" href="#">Web Plans</a>
+                        <button type="button">Web Plans</button>
                     </article>
                 </div>
 
-                <div class="print">
+                <div id="print" class="services-grid-item">
                     <img src="images/print.jpg" alt="Newspaper stands">
                     <article>
                         <h3>Print</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis imperdiet proin fermentum leo vel orci porta.</p>
-                        <a class="btn" href="#">Print Plans</a>
+                        <button type="button">Print Plans</button>
                     </article>
                 </div>
+            </div>
+        </section>
+
+        <section id="our-vision" class="hero-image">
+        <!-- Reusable section class to target in CSS for hero images -->
+            <div class="our-vision-hero-image">
+                <img class="banner-img" src="images/vision.jpg" alt="Our Vision">
+                <div class="container">
+                    <h3>Our Vision</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque nemo odit modi, quod quas ducimus? Soluta, eaque exercitationem, optio quibusdam omnis reiciendis nulla nemo ullam saepe fugit, veniam illo nisi.</p>
+                    <button type="button">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-team" class="grid-container">
+            <h2>Our Team</h2>
+            <div class="team-grid">
+                <div class="john-card">
+                    <div id="john-photo" class="team-card">
+                        <img src="images/john.jpg" alt="John Doe">
+                    </div>
+                    <div id="john-content" class="team-card">
+                        <h3>John Doe</h3>
+                        <h4>CEO and Co-owner</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sapiente necessitatibus harum atque, rem nobis iure nulla quae quibusdam. Necessitatibus ab aut reiciendis libero, sed quia in repudiandae magni magnam.</p>
+                    </div>
+                </div>
+
+                <div class="bob-card">
+                    <div id="bob-photo" class="team-card">
+                        <img src="images/bob.jpg" alt="Bob Rite">
+                    </div>
+                    <div id="bob-content" class="team-card">
+                        <h3>Bob Rite</h3>
+                        <h4>CFO and Co-owner</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sapiente necessitatibus harum atque, rem nobis iure nulla quae quibusdam. Necessitatibus ab aut reiciendis libero, sed quia in repudiandae magni magnam.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-us" class="grid-container">
+            <h2>Contact Us</h2>
+            <div id="contact-form-grid" class="contact-us-grid">
+                <form action="#" method="get">
+                    <h3>Send us a message</h3>
+                    <div class="fill-form">
+                        <label for="fullname">Full Name</label>
+                        <input id="fullname" name="fullname" type="text">
+                    </div>
+                    <div class="fill-form">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email">
+                    </div>
+                    <div class="fill-form">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+            <div id="hours-grid" class="contact-us-grid">
+                    <h3>Hours of operation</h3>
+                    <table class="operating-hours">
+                        <tbody>
+                            <tr>
+                                <th>Days</th>
+                                <th>Hours</th>
+                            </tr>
+                            <tr>
+                                <td>Monday - Friday</td>
+                                <td>9AM - 6PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday - Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+
+            <div id="map-frame" class="contact-us-grid">
+                    <h3>Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d179236.6387268623!2d-75.7492796457417!3d45.41795998603937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d45.4770319!2d-75.4487161!4m5!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus%2C%201385%20Woodroffe%20Ave%2C%20Nepean%2C%20ON%20K2G%201V8!3m2!1d45.3499335!2d-75.7549257!5e0!3m2!1sen!2sca!4v1690733073936!5m2!1sen!2sca" width="100" height="100" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
 
     </main>
 
     <footer>
-        <small>&copy; Copyright Three Star Media, 2020</small>
-        <small>All images are taken from <a href="https://unsplash.com/">Unsplash</a></small>
-
+        <p>&copy; Copyright Three Star Media, 2020</p>
+        <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
     </footer>
     
 </body>
